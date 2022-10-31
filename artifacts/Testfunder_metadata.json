@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "newFunder",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"struct.sol": "Testfunder"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"struct.sol": {
+			"keccak256": "0x5790f9d563d8f1be31132fc76068337f58e72a5356b5d543bbf2766efdef1931",
+			"urls": [
+				"bzzr://a28736588ba3008fee090b0828666b7536e2e80a6eb51ffbaf559b7a5ceb3ada"
+			]
+		}
+	},
+	"version": 1
+}

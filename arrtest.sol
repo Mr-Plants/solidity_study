@@ -17,9 +17,14 @@ contract Arr {
     }
 
     function v3(uint len) public view returns (uint){
-        uint[] memory b = new uint[len];
+        uint[] memory b = new uint[] (len);
         // b.length=10;  会报错
         // a.length = 10; 不会报错
         return b.length;
+    }
+
+    function push() public view returns (uint){
+        a.push(4);
+        return a.length;
     }
 }
