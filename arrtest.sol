@@ -15,4 +15,9 @@ contract Arr {
     function v2() public view returns (byte){
         return bytes(s)[1];
     }
+
+    function v3(uint len) public view returns (uint){
+        uint[] memory a = new uint[len];
+        return a.length;
+    }
 }
