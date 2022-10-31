@@ -116,9 +116,7 @@ contract Ballot {
     }
 
     /// @dev 结合之前所有的投票，计算出最终胜出的提案
-    function winningProposal() external view
-    returns (uint winningProposal_)
-    {
+    function winningProposal() external view returns (uint winningProposal_){
         uint winningVoteCount = 0;
         for (uint p = 0; p < proposals.length; p++) {
             if (proposals[p].voteCount > winningVoteCount) {
@@ -129,9 +127,7 @@ contract Ballot {
     }
 
     // 调用 winningProposal() 函数以获取提案数组中获胜者的索引，并以此返回获胜者的名称
-    function winnerName() public view
-    returns (bytes32 winnerName_)
-    {
+    function winnerName() public view returns (bytes32 winnerName_){
         winnerName_ = proposals[winningProposal()].name;
     }
 }
