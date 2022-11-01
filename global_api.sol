@@ -10,7 +10,7 @@ contract TestApi{
         // return block.difficulty;  // 当前区块的计算难度
         // return block.number;   //当前区块的序号
         // return block.timestamp;  // 当前区块的时间戳（秒）
-        // return now;
+        // return now;  // 在 0.7.0, now ( block.timestamp 的别名) 被移除了。
         // return tx.gasprice;   // 当前交易gas单价
     }
 
